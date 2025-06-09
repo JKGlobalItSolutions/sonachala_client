@@ -9,6 +9,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import LogoutPopup from "../components/LogoutPopup";
 
+
+
+// img
+import logo from "/assets/img/logo.png";
+
+
+
+
+
 import {
   FaHotel,
   FaPlane,
@@ -196,7 +205,7 @@ function Navbar() {
               <ul className="navbar-nav flex-row flex-wrap gap-2 align-items-center">
                 <Link to="/" className="navbar-brand d-flex align-items-center">
                   <img
-                    src="/assets/img/logo.png"
+                    src={logo}
                     alt="Logo"
                     style={{ maxHeight: "110px" }}
                   />
