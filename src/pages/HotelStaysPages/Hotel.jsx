@@ -7,6 +7,47 @@ import "flatpickr/dist/flatpickr.min.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 
+// images
+import img1 from"/assets/index/expore 1.png"
+import img2 from "/assets/index/expore 2.png"
+import img3 from "/assets/index/expore 3.png"
+import img4 from "/assets/index/expore 4.png"
+
+import stay1 from "/assets/index/bestWeekend 1.png"
+import stay2 from "/assets/index/bestWeekend 2.png"
+import stay3 from "/assets/index/bestWeekend 3.png"
+
+
+import tnmap from "/assets/index/tamilnadu.png"
+
+// icons
+import icon1 from "/assets/img/index page icons footer/1.png"
+import icon2 from "/assets/img/index page icons footer/2.png"
+import icon3 from "/assets/img/index page icons footer/3.png"
+import icon4 from "/assets/img/index page icons footer/4.png"
+
+
+
+
+
+/* Trending Destinations Section */
+
+import tren1 from "/assets/index/trending designations 1.png"
+import tren2 from "/assets/index/trending designations 2.png"
+import tren3 from "/assets/index/trending designations 3.png"
+import tren4 from "/assets/index/trending designations 4.jpg"
+
+
+
+import offer1 from "/assets/index/offer1.png"
+import offer2 from "/assets/index/offer2.png"
+
+
+import recent1 from "/assets/index/1.png"
+import recent2 from "/assets/index/2.png"
+import recent3 from "/assets/index/3.png"
+
+
 function HomePage() {
   const navigate = useNavigate()
   const location = useLocation()
@@ -376,7 +417,7 @@ function HomePage() {
         <div className="container mt-4">
           <div className="d-flex justify-content-between align-items-center mb-3">
             <h3 className="text-dark">Your recent searches</h3>
-            <a href="/hotels" className="text-decoration-none" style={{ color: "#038A5E" }}>
+            <a href="/hotels" className="text-decoration-none" style={{ color: "#038A5E" }}> 
               View All
             </a>
           </div>
@@ -386,7 +427,7 @@ function HomePage() {
                 <div className="row g-0">
                   <div className="col-4">
                     <img
-                      src="/assets/index/1.png"
+                      src={recent1}
                       className="img-fluid rounded-start h-100 object-fit-cover"
                       alt="Sparsa Resort"
                     />
@@ -413,7 +454,7 @@ function HomePage() {
                 <div className="row g-0">
                   <div className="col-4">
                     <img
-                      src="/assets/index/2.png"
+                      src={recent2}
                       className="img-fluid rounded-start h-100 object-fit-cover"
                       alt="Arudra Residency"
                     />
@@ -440,7 +481,7 @@ function HomePage() {
                 <div className="row g-0">
                   <div className="col-4">
                     <img
-                      src="/assets/index/3.png"
+                      src={recent3}
                       className="img-fluid rounded-start h-100 object-fit-cover"
                       alt="Athena Hotel"
                     />
@@ -475,7 +516,7 @@ function HomePage() {
                 <div className="row g-0">
                   <div className="col-md-3">
                     <img
-                      src="/assets/index/offer1.png"
+                      src={offer1}
                       className="img-fluid rounded-start h-100 object-fit-cover"
                       alt="3 Days & 2 Nights Stay"
                     />
@@ -497,7 +538,7 @@ function HomePage() {
                 <div className="row g-0">
                   <div className="col-md-3">
                     <img
-                      src="/assets/index/offer2.png"
+                      src={offer2}
                       className="img-fluid rounded-start h-100 object-fit-cover"
                       alt="Premium Stay Offer"
                     />
@@ -526,7 +567,7 @@ function HomePage() {
           <div className="col-md-6">
             <div className="position-relative rounded overflow-hidden" style={{ height: "300px" }}>
               <img
-                src="/assets/index/trending designations 1.png"
+                src={tren1}
                 alt="Kodaikanal"
                 className="w-100 h-100 object-fit-cover"
               />
@@ -538,7 +579,7 @@ function HomePage() {
           <div className="col-md-6">
             <div className="position-relative rounded overflow-hidden" style={{ height: "300px" }}>
               <img
-                src="/assets/index/trending designations 2.png"
+                src={tren2}
                 alt="Coimbatore"
                 className="w-100 h-100 object-fit-cover"
               />
@@ -550,7 +591,7 @@ function HomePage() {
           <div className="col-md-6">
             <div className="position-relative rounded overflow-hidden" style={{ height: "300px" }}>
               <img
-                src="/assets/index/trending designations 3.png"
+                src={tren3}
                 alt="Bangalore"
                 className="w-100 h-100 object-fit-cover"
               />
@@ -562,7 +603,7 @@ function HomePage() {
           <div className="col-md-6">
             <div className="position-relative rounded overflow-hidden" style={{ height: "300px" }}>
               <img
-                src="/assets/index/trending designations 4.jpg"
+                src={tren4}
                 alt="Kerala"
                 className="w-100 h-100 object-fit-cover"
               />
@@ -574,6 +615,11 @@ function HomePage() {
         </div>
       </div>
 
+
+
+
+
+
       {/* Explore Tiruvannamalai Section */}
       <div className=" my-5">
         <div className="container">
@@ -583,25 +629,25 @@ function HomePage() {
               <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                 <div className="col p-3">
                   <div className="card" style={{ border: "none" }}>
-                    <img src="/assets/index/expore 1.png" className="card-img-top" alt="Apartments" />
+                    <img src={img1} className="card-img-top" alt="Apartments" />
                     <h5 className="card-title text-center p-1">Sri Ramana Ashram</h5>
                   </div>
                 </div>
                 <div className="col p-3">
                   <div className="card" style={{ border: "none" }}>
-                    <img src="/assets/index/expore 2.png" className="card-img-top" alt="Hotels" />
+                    <img src={img2} className="card-img-top" alt="Hotels" />
                     <h5 className="card-title text-center p-1">Sri Seshadri Swamigal Ashram</h5>
                   </div>
                 </div>
                 <div className="col p-3">
                   <div className="card" style={{ border: "none" }}>
-                    <img src="/assets/index/expore 3.png" className="card-img-top" alt="Villas" />
+                    <img src={img3} className="card-img-top" alt="Villas" />
                     <h5 className="card-title text-center p-1">Yogi Ram Surath Kumar Ashram</h5>
                   </div>
                 </div>
                 <div className="col p-3">
                   <div className="card" style={{ border: "none" }}>
-                    <img src="/assets/index/expore 4.png" className="card-img-top" alt="Resorts" />
+                    <img src={img4} className="card-img-top" alt="Resorts" />
                     <h5 className="card-title text-center p-1">Skandashramam</h5>
                   </div>
                 </div>
@@ -630,12 +676,12 @@ function HomePage() {
         }}
       >
         {[
-          { name: "MPS Saai Residency", address: "61-B ROA Nagar, Chengam Road, Ramana nagar", img: "./assets/index/bestWeekend 1.png", rating: "4.6", oldPrice: "5,999", newPrice: "4,271", taxes: "513" },
-          { name: "Hotel Sunshine", address: "MG Road, Chennai", img: "./assets/index/bestWeekend 2.png", rating: "4.3", oldPrice: "4,999", newPrice: "3,999", taxes: "450" },
-          { name: "Hotel Sunshine", address: "MG Road, Chennai", img: "./assets/index/bestWeekend 2.png", rating: "4.3", oldPrice: "4,999", newPrice: "3,999", taxes: "450" },
-          { name: "Green Valley Inn", address: "Kodaikanal Main Road", img: "./assets/index/bestWeekend 3.png", rating: "4.7", oldPrice: "6,499", newPrice: "4,999", taxes: "550" },
-          { name: "MPS Saai Residency", address: "61-B ROA Nagar, Chengam Road, Ramana nagar", img: "./assets/index/bestWeekend 1.png", rating: "4.6", oldPrice: "5,999", newPrice: "4,271", taxes: "513" },
-          { name: "Hotel Sunshine", address: "MG Road, Chennai", img: "./assets/index/bestWeekend 2.png", rating: "4.3", oldPrice: "4,999", newPrice: "3,999", taxes: "450" }
+          { name: "MPS Saai Residency", address: "61-B ROA Nagar, Chengam Road, Ramana nagar", img: stay1 , rating: "4.6", oldPrice: "5,999", newPrice: "4,271", taxes: "513" },
+          { name: "Hotel Sunshine", address: "MG Road, Chennai", img: stay2, rating: "4.3", oldPrice: "4,999", newPrice: "3,999", taxes: "450" },
+          { name: "Hotel Sunshine", address: "MG Road, Chennai", img: stay2, rating: "4.3", oldPrice: "4,999", newPrice: "3,999", taxes: "450" },
+          { name: "Green Valley Inn", address: "Kodaikanal Main Road", img: stay3, rating: "4.7", oldPrice: "6,499", newPrice: "4,999", taxes: "550" },
+          { name: "MPS Saai Residency", address: "61-B ROA Nagar, Chengam Road, Ramana nagar", img: stay1, rating: "4.6", oldPrice: "5,999", newPrice: "4,271", taxes: "513" },
+          { name: "Hotel Sunshine", address: "MG Road, Chennai", img: stay1, rating: "4.3", oldPrice: "4,999", newPrice: "3,999", taxes: "450" }
         ].map((hotel, index) => (
           <div
             key={index}
@@ -705,7 +751,7 @@ function HomePage() {
             {/* Right Section: Map Image */}
             <div className="col-md-6 text-center">
               <img
-                src="/assets/index/tamilnadu.png"
+                src={tnmap}
                 alt="Tamil Nadu Map"
                 className="img-fluid p-3"
                 style={{ maxWidth: "400px", width: "100%" }}
@@ -721,7 +767,7 @@ function HomePage() {
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div style={{ border: "2px solid #038A5E" }} className="card text-center align-items-stretch">
                 <img
-                  src="/assets/img/index page icons footer/1.png"
+                  src={icon1}
                   alt="Profile Image"
                   className="card-img-circle"
                   style={{
@@ -750,7 +796,7 @@ function HomePage() {
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div style={{ border: "2px solid #038A5E" }} className="card text-center align-items-stretch">
                 <img
-                  src="/assets/img/index page icons footer/2.png"
+                  src={icon2}
                   alt="Profile Image"
                   className="card-img-circle"
                   style={{
@@ -779,7 +825,7 @@ function HomePage() {
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div style={{ border: "2px solid #038A5E" }} className="card text-center align-items-stretch">
                 <img
-                  src="/assets/img/index page icons footer/3.png"
+                  src={icon3}
                   alt="Profile Image"
                   className="card-img-circle"
                   style={{
@@ -808,7 +854,7 @@ function HomePage() {
             <div className="col-12 col-lg-3 col-md-6 pb-4">
               <div style={{ border: "2px solid #038A5E" }} className="card text-center align-items-stretch">
                 <img
-                  src="/assets/img/index page icons footer/4.png"
+                  src={icon4}
                   alt="Profile Image"
                   className="card-img-circle"
                   style={{
