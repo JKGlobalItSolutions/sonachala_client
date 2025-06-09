@@ -1,0 +1,275 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+  }
+
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+
+  .bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+  }
+  .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    transform: translate(1%, 1%);
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.5); Optional: to add a background with opacity */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+body{
+  font-family: Urbanist;
+}
+.image-container-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.image-container1 {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.image-card {
+  flex: 0 0 auto;
+  width: 150px;
+  margin: 0 10px;
+  background-color: white;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+.card-img-circle {
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-top: -40px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block; 
+  border: 3px solid white;
+}
+.card-body {
+  padding-top: 20px; /* Adjust to fit image properly */
+}
+.card {
+  margin-top: 30px; /* Optional: Adjust to add space above card */
+}
+.small-link {
+  font-size: 12px; /* Adjust the size as needed */
+}
+.footer {
+  background-color: #001524;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.textdec {
+  text-decoration: none;
+}
+
+.horizantal-line {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.footer p {
+  text-align: center;
+  margin-top: 10px; /* Adjust as needed */
+  font-size: 14px; /* Adjust as needed */
+}
+
+/* hero section search start */
+    
+
+/* Custom styles */
+          
+
+ .form-group-label {
+  font-weight: bold;
+}
+
+.input-group-topic {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+.input-group-addon {
+  background-color: white;
+}
+#location{
+    height: 50px;
+    margin-top: 20px;
+
+}
+#dates{
+    height: 50px;
+    margin-top: 20px;
+}
+#guests{
+    height: 50px;
+    margin-top: 20px;
+}
+#search{
+    height: 50px;
+    width: 150px;
+    margin-top: 20px;
+}
+/* CSS for screens wider than 768px */
+/* hero section css start */
+#move2{
+  margin-top: -85px;
+}
+
+/* hero section search end */
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #f50e0e;
+}
+
+/* style for suggetion box start */
+.suggestion-box {
+  position: absolute;
+  background-color: #333; /* Dark background for the suggestion box */
+  z-index: 1000;
+  width: 100%;
+  color: white; /* Set text color to white */
+}
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer; /* Change cursor to pointer */
+}
+.suggestion-item:hover {
+  background-color: #555; /* Darker background on hover */
+}
+/* style for suggetion box end */
+
+
+/* child age css start */
+.child-age-dropdown {
+  flex: 1 1 100px; /* Adjust the width as needed */
+}
+
+.child-age-dropdown label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+/* child age css end */
